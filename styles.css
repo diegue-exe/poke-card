@@ -145,14 +145,3 @@ p.description{
     font-size: 12px;
     line-height: 16px;
 }
-
-/* 
-
-.grid-layout {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
-    justify-items: stretch;
-} */
