@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body { 
+    background-color: #F7F7F7;
+    font-family: 'Poppins', sans-serif; 
+}
+
+p {
+    margin: 0px;
+}
+
+.pkmn-img {
+    position: absolute;
+    z-index: 1;
+    top: 13%;
+    left: 25%;
+}
+
+p.description{
+    font-weight: 400;
+    font-size: 12px;
+    padding: 0px 32px;
+    line-height: 16px;
+}
+
+/* Cards */
+.card {
+    position: relative;
+    background-color: #74CB48;
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+}
+ 
+.card-body {
+    position: absolute;
+    background-color: white;
+    height: 240px;
+    width: 290px;    
+    top: 155px;
+    border-radius: 8px;
+    left: 5px;
+}
+
+/* Upper text */
+.upper-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 24px 0px;
+    
+    font-weight: 700;
+    align-items: center;
+    color: white;
+}
+
+#name {
+    font-size: 24px;
+}
+
+#pokedex {
+    font-size: 14px;
+}
+
+/* Tags */
+
+.tag {
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+}
+
+.tag.grass {
+    background-color: #74CB48;
+}
+
+.tag.poison {
+    background-color: #A43E9E;
+}
+
+.tag-group {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 56px 56px 8px 56px;
+}
+
+/* Body title */
+
+.body-title{
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    color: #74CB48;
+}
+
+/* Genetics + icons */
+.genetics{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divider {
+    width: 1px;
+    height: 52px;
+    background-color: #E0E0E0;
+}
+
+.txt-icon {
+    display: flex;
+    gap: 8px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#weight, #height{
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    align-items: center;
+    padding: 16px 0px;
+}
+
+#weight span, #height span {
+    color: #666666;
+    font-size: 14px;
+}
+
+
+
