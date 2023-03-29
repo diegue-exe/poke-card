@@ -1,14 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+:root {
+    /* Type colors */
+    --rock-color: #b69e31;
+    --ghost-color: #70559B;
+    --steel-color: #E5E5E5;
+    --water-color: #6493EB;
+    --grass-color: #74CB48;
+    --psychic-color: #FB5584;
+    --ice-color: #9AD6DF;
+    --dark-color: #75574C;
+    --fairy-color: #E69EAC;
+    --normal-color: #AAA67F;
+    --fighting-color: #C12239;
+    --flying-color: #A891EC;
+    --poison-color: #A43E9E;
+    --ground-color: #DEC16B;
+    --bug-color: #A7B723;
+    --fire-color: #F57D31;
+    --electric-color: #F9CF30;
+    --dragon-color: #7037FF;
+
+    /* Color pallete */
+    --background: #F7F7F7;
+    --white: #FFFFFF;
+    --light-gray: #E0E0E0;
+    --medium-gray: #666666;
+    --dark-gray: #212121;
+    
+}
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 body { 
-    background-color: #F7F7F7;
+    background-color: var(--background);
     font-family: 'Poppins', sans-serif;
     padding: 16px; 
+}
+
+.line-height-default {
+    line-height: 16px;
 }
 
 .poke-img {
@@ -22,17 +56,16 @@ body {
 }
 
 p.description{ 
-    font-weight: 400;
     font-size: 12px;
-    line-height: 16px;
+    
     text-align: justify;
-    color: #212121;
+    color: var(--dark-gray);
 }
 
 .card {
     display: flex;
     width: 300px;
-    height: 400px;
+    min-height: 400px;
     border-radius: 10px;
     padding: 5px;
     font-size: 16px;
@@ -41,13 +74,11 @@ p.description{
 }
  
 .card-body {
-    position: relative;
-    background-color: white;  
+    background-color: var(--white);  
     border-radius: 8px;
     padding: 58px 20px 16px 20px;
 }
 
-/* Upper text */
 .card-header{
     display: flex;
     flex-direction: row;
@@ -56,7 +87,7 @@ p.description{
     
     font-weight: 700;
     align-items: center;
-    color: white;
+    color: var(--white);
 }
 
 #name {
@@ -77,16 +108,15 @@ p.description{
     padding: 2px 8px;
     font-weight: 600;
     font-size: 12px;
-    line-height: 16px;
-    color: white;
+    color: var(--white);
 }
 
 .grass {
-    background-color: #74CB48;
+    background-color: var(--grass-color);
 }
 
 .poison {
-    background-color: #A43E9E;
+    background-color: var(--poison-color);
 }
 
 .tag-group {
@@ -101,9 +131,9 @@ p.description{
     font-weight: 700;
     display: flex;
     justify-content: center;
-    color: #74CB48;
+    color: var(--grass-color);
     margin-bottom: 16px;
-    line-height: 16px;
+
 }
 
 .genetics{
@@ -118,7 +148,7 @@ p.description{
     align-self: stretch;
     width: 1px;
     margin: 0px 24px 16px 24px;
-    background-color: #E0E0E0;
+    background-color: var(--light-gray);
 }
 
 .txt-icon {
@@ -132,16 +162,13 @@ p.description{
 #poke-weight, #poke-height{
     display: flex;
     flex-direction: column;
-    font-weight: 400;
     font-size: 14px;
-    line-height: 16px;
     align-items: center;
     margin-bottom: 16px;
-    color: #212121;
+    color: var(--dark-gray);
 }
 
 #poke-weight span, #poke-height span {
-    color: #666666;
+    color: var(--medium-gray);
     font-size: 12px;
-    line-height: 16px;
 }
