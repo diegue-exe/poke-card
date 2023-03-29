@@ -38,7 +38,6 @@
 body { 
     background-color: var(--background);
     font-family: 'Poppins', sans-serif;
-    padding: 16px; 
 }
 
 .line-height-default {
@@ -236,7 +235,7 @@ p.description{
     width: 958px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-auto-flow: row;
     grid-gap: 20px 29px;
 }
@@ -245,5 +244,46 @@ p.description{
     display: flex;
     justify-content: center;
     line-height: 32px;
+    margin-bottom: 34px;
 }
 
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    padding: 24px 0px 18px 134px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 41px;
+}
+
+.search-bar {
+    background: url(assets/images/icons/search.png) no-repeat 9px 9px;
+    padding-left: 35px;
+    border: 1px solid var(--light-gray);
+    border-radius: 8px;
+    min-width: 502px;
+    min-height: 35px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 54px;
+}
+
+footer {
+    border-top: 1px solid var(--light-gray);
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-divider {
+    display: flex;
+    align-self: stretch;
+    width: 1px;
+    margin: 8px 3px 8px 15px;
+    background-color: var(--light-gray);
+}
